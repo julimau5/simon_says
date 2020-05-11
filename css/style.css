@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background: #dedede;
+    background: white;
     display: flex;
     align-items: center;
     height: 100vh;
@@ -9,11 +9,12 @@ body {
   .gameboard {
     height: 100vh;
     width: 100vh;
-    border-radius: 50%;
+    /* border-radius: 50%; */
     overflow: hidden;
     margin: 0 auto;
-    max-height: 60vh;
-    max-width: 60vh;
+    padding: 0;
+    max-height: 100vh;
+    max-width: 100vh;
   }
 
   .color {
@@ -31,15 +32,18 @@ body {
   }
 
   .celeste {
-    background: #22a6b3;
+    background: rgb(2,0,36);
+    background: linear-gradient(125deg, rgba(2,0,36,1) 0%, rgba(7,77,223,1) 30%, rgba(0,255,209,1) 100%);
   }
 
   .celeste.light {
-    background: #7ed6df;
+    background: rgb(55, 172, 207);
+    background: linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(7,77,223,0.27494747899159666) 30%, rgba(0,255,209,1) 100%);
   }
 
   .violeta {
-    background: #be2edd;
+    background: rgb(224,63,251);
+    background: linear-gradient(225deg, rgb(253, 41, 129) 0%, rgb(255, 150, 171) 100%);
   }
 
   .violeta.light {
@@ -47,30 +51,36 @@ body {
   }
 
   .naranja {
-    background: #f0932b;
+    background: rgb(149,4,4);
+    background: linear-gradient(45deg, rgba(149,4,4,1) 0%, rgba(253,29,29,1) 25%, rgba(252,176,69,1) 100%);
   }
 
   .naranja.light {
-    background: #ffbe76;
+    background: rgb(255, 189, 114);
+    background: linear-gradient(45deg, rgba(255,199,199,1) 0%, rgba(253,29,29,0.3029586834733894) 25%, rgba(252,176,69,1) 100%);
   }
 
   .verde {
-    background: #6ab04c;
+    background: rgb(34,193,195);
+    background: linear-gradient(325deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);    
   }
 
   .verde.light {
-    background: #badc58;
+    background: rgb(107,251,96);
+    background: linear-gradient(109deg, rgba(107,251,96,0.5214460784313726) 0%, rgba(255,202,88,0.20772058823529416) 100%);
   }
 
   .btn-start {
-    width: 400px;
-    height: 100px;
-    background: #ecf0f1;
-    color: #2c3e50;
-    font-size: 2.5rem;
+    width: 600px;
+    height: 160px;
+    background: #ecf0f100;
+    color: #ffffff;
+    font-size: 5rem;
     position: absolute;
-    top: calc(50% - 50px);
-    left: calc(50% - 200px);
+    top: calc(50% - 80px);
+    left: calc(50% - 300px);
+    border: #ffffff solid;
+    padding: 10px;
   }
 
   .hide {
